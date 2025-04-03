@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "newapiforazure", "newapiforazure.csproj", "{5275FB0D-D758-4132-A6DA-7575DAE28259}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5275FB0D-D758-4132-A6DA-7575DAE28259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5275FB0D-D758-4132-A6DA-7575DAE28259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5275FB0D-D758-4132-A6DA-7575DAE28259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5275FB0D-D758-4132-A6DA-7575DAE28259}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4362796B-5BFA-4F64-AA43-575781D8E098}
+	EndGlobalSection
+EndGlobal
