@@ -28,7 +28,7 @@ resource "azurerm_windows_web_app" "serviceApp" {
       dotnet_version = "v8.0"
     }
     scm_type   = "VSTSRM"
-    ftps_state = "Enabled"
+    ftps_state = "AllAllowed"
 
   }
     app_settings = {
