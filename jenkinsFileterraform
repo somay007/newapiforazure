@@ -15,17 +15,14 @@ pipeline {
         }
       stage('Terraform Init') {
            steps {
-               dir('%TERRAFORM_PATH%') {
-                   bat 'terraform init'
-               }
+                bat '"%TERRAFORM_PATH%" init'
           }
     }
       stage('Terraform Plan & Apply') {
            steps {
-               dir('%TERRAFORM_PATH%') {
-               bat 'terraform plan -out=tfplan'
-               bat 'terraform apply -auto-approve tfplan'
-               }
+               
+               bat '"%TERRAFORM_PATH%" plan -out=tfplan'
+               bat '"%TERRAFORM_PATH%" apply -auto-approve tfplan'
            }
      }
 
