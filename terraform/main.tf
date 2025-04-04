@@ -27,7 +27,9 @@ resource "azurerm_windows_web_app" "serviceApp" {
     application_stack {
       dotnet_version = "v8.0"
     }
-    scm_type   = "Basic"
+    auth_settings {
+    scm_type = "Basic" # Enables SCM Basic Auth publishing credentials
+  }
     ftps_state = "AllAllowed"
 
   }
