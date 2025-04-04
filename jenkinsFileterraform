@@ -4,6 +4,7 @@ pipeline {
         AZURE_CREDENTIALS_ID = 'azure-service-principal'
         RESOURCE_GROUP = 'rg-jenkins'
         APP_SERVICE_NAME = 'webapijenkins10101010'
+        TERRAFORM_PATH = '"C:\\Users\\hp\\Downloads\\terraform_1.11.3_windows_386\\terraform.exe"'
     }
 
     stages {
@@ -14,7 +15,7 @@ pipeline {
         }
       stage('Terraform Init') {
            steps {
-               dir('terraform') {
+               dir('%TERRAFORM_PATH%') {
                    bat 'terraform init'
                }
           }
