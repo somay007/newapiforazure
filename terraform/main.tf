@@ -27,7 +27,7 @@ resource "azurerm_windows_web_app" "serviceApp" {
     application_stack {
       dotnet_version = "v8.0"
     }
-    scm_type   = "VSTSRM"
+    scm_type   = "GitHub"
     ftps_state = "AllAllowed"
 
   }
