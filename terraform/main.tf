@@ -27,6 +27,7 @@ resource "azurerm_windows_web_app" "serviceApp" {
     application_stack {
       dotnet_version = "8.0"
     }
+}
     
 }
 
