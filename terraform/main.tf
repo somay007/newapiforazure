@@ -25,17 +25,9 @@ resource "azurerm_windows_web_app" "serviceApp" {
   resource_group_name = azurerm_resource_group.rgasp.name
   site_config {
     application_stack {
-      dotnet_version = "v8.0"
+      dotnet_version = "8.0"
     }
-    auth_settings {
-    scm_type = "Basic" # Enables SCM Basic Auth publishing credentials
-  }
-    ftps_state = "AllAllowed"
-
-  }
-    app_settings = {
-    "SCM_BASIC_AUTH_ENABLED" = "true" 
-  }
+    
 }
 
 resource "azurerm_windows_web_app_slot" "deploySlot" {
